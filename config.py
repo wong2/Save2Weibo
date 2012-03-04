@@ -1,0 +1,6 @@
+APP_KEY = ''
+APP_SECRET = ''
+
+BOT_TOKEN_KEY  = ""
+BOT_TOKEN_SECRET = ""
+

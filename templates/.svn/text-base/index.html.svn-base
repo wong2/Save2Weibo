@@ -1,0 +1,177 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>冰岩收藏 - 把网页收藏到微博里，方便以后再看</title>
+
+<style type="text/css">
+* {
+	margin:0;
+	padding:0;
+}
+
+p {
+	margin:20px 0;
+}
+
+body {width:960px;
+	  margin:30px auto;
+	  font-size:14px;
+	  font-family:Arial, Helvetica, sans-serif;
+	  }
+
+.header{
+	border-bottom:1px solid #CCC;
+	font-family:Microsoft Yahei;
+	padding:0.5em;
+	}
+
+.header a{
+	font-size:30px;
+	color:#F60;
+	text-decoration:none;
+}
+
+.header span{
+	font-weight:bold;
+	margin-left:10px;
+	font-size:15px;
+}
+
+.way h2 {
+	font:16px 'Microsoft Yahei';
+	color:#F60;
+	font-weight:bold;
+	margin-top:20px;
+}
+
+.way{
+	position:relative;
+}
+
+.button{
+	position:absolute;
+	right:100px;
+	top:19px;
+}
+
+.button_drag {
+	background-color:#FC6;
+	padding:15px 10px;
+}
+
+.footer a {
+	color:#F60;
+	margin-right:10px;
+}
+
+.bingyan {
+	display:inline-block;
+	background-image:url(/static/bt_logo.gif);
+	background-repeat:no-repeat;
+	padding-left:18px;
+}
+
+img.tip {
+	display:block;
+	width:534px;
+}
+
+.footer {
+	margin-top:20px;
+}
+
+.tujie p {
+	font-weight:600;
+}
+
+.button_drag a {
+	color:#06C;
+}
+
+
+
+
+</style>
+
+<script type="text/javascript">
+function addto() {
+	var browser=navigator.userAgent.toString();
+	var how=document.getElementById("how");
+	var hotkey=document.getElementById("hotkey");
+	if(browser.indexOf("Chrome")>-1) {
+		how.innerHTML='← 把这个链接拖到你的浏览器书签栏';
+		hotkey.innerHTML="没有找到书签栏，试试 Ctrl +  Shift + B";
+		return false;
+	}
+	else {
+		how.innerHTML='←右键点击链接，选择"添加到收藏夹"';
+		hotkey.style.display="none";
+	}
+}
+
+window.onload=function() {
+	addto();
+}
+
+
+
+
+
+</script>
+</head>
+
+<body>
+	<div class="header">
+    	<a href="#">冰岩收藏</a>
+        <span>把网页收藏到微博里，方便以后再看</span>
+    </div>
+    
+	<div id="content">
+    	<div>
+        	<p>你平时会收藏微博，方便以后再看？</p>
+        	<p>微博是你收藏有用和有趣的东西的重要枢纽？</p>
+        	<p>OK，那你很可能的我的用户！</p>
+            <P>我可以把网页也收藏到微博的“收藏”里！</P>
+        </div>
+		
+        <div class="way">
+			<div>
+            	<h2>如何使用</h2>
+                <p>1、把右边的链接添加到浏览器的书签栏，并用新浪微博帐号登录</p>
+                <p>2、看到感兴趣的网页，点击“收藏到微博”即可收藏到微博的“收藏”</p>
+                <p>3、登录新浪微博，进入“我的收藏“，继续浏览或分享收藏过的网页</p>
+                <p><b>PS.收藏是私密的，别人看不到你收藏了什么</b></p>
+            </div>
+            
+            <div class="tujie">
+            	<h2>使用图解</h2>
+                <div>
+                    <p>1、上网浏览时发现感兴趣的网页，但暂时没时间看，点击“收藏到微博”</p>
+                    <img class="tip" src="/static/tip_1.jpg"  />
+                    <p>2、登录你的新浪微博，进入“我的收藏”</p>
+                    <img class="tip" src="/static/tip_2.jpg"/>
+                    <p>3、在”我的收藏“里可以看到收藏过的网页，继续浏览或分享它们</p>
+                    <img class="tip" src="/static/tip_3.jpg"/>
+                </div>
+            </div>
+            
+            <div class="button">
+				<p class="button_drag"><a href="javascript:(function(){var s=document.createElement('script');s.type='text/javascript';s.src='http://so2weibo.sinaapp.com/static/inject.js';document.getElementsByTagName('head')[0].appendChild(s)})()">收藏到微博</a><span id="how"></span></p>
+				<p id="hotkey"></p>
+            </div>
+            
+		</div>
+		
+        
+	</div>
+		
+	
+    <div class="footer">
+    	<span>开发者:</span>
+        <a href="http://wong2.cn"> @wong2</a>
+        <a href="http://weibo.com/jiutangyue">@IKnowMerry</a>
+    	<a class="bingyan" href="http://www.bingyan.net">冰岩作坊</a>
+    </div>
+</body>
+</html>

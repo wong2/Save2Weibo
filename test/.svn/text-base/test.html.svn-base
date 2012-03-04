@@ -1,0 +1,14 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Test Dialog</title>
+</head>
+<body>
+	<script type="text/javascript" src="../inject.js"></script>
+    <script type="text/javascript">
+        var dialog = new Dialog();
+        dialog.showLoginLink();
+    </script>
+</body>
+</html>

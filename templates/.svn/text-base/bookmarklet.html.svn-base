@@ -1,0 +1,10 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>收藏到微博</title>
+</head>
+<body>
+    将这个书签拖拽到书签栏里：<a href="javascript:(function(){var s=document.createElement('script');s.type='text/javascript';s.src='http://so2weibo.sinaapp.com/static/inject.js';document.getElementsByTagName('head')[0].appendChild(s)})()">收藏到微博</a>
+    </body>
+</html>
